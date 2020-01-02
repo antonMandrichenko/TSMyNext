@@ -1,17 +1,26 @@
 import React from 'react'
-import { NextPage } from 'next';
+import { withApollo } from '../services/apolloClient'
+import { useQuery } from '@apollo/react-hooks'
+import gql from 'graphql-tag'
+import { NextComponentType } from 'next'
 
-const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => {
-    return (
-        <div>
-            {userAgent}
-        </div>
-    )
+const HELLO_QUERY = gql`
+  query HelloQuery {
+    sayHello
+  }
+`
+
+const Home: NextComponentType = () => {
+  const { data, loading, error } = useQuery(HELLO_QUERY)
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
+  if (error) {
+    return <div>{`Error ${error.message}`}</div>
+  }
+
+  return <div>{data.sayHello}</div>
 }
 
-Home.getInitialProps = async ({ req }) => {
-    const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-    return { userAgent };
-};
-
-export default Home;
+export default withApollo(Home)

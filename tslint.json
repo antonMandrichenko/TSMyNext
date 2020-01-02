@@ -92,14 +92,7 @@
       }
     ],
     "linebreak-style": [true, "LF"],
-    "typedef": [
-      true,
-      "call-signature",
-      "parameter",
-      "arrow-call-signature",
-      "arrow-parameter",
-      "property-declaration"
-    ],
+    "typedef": [true, "call-signature", "parameter", "property-declaration"],
     "no-consecutive-blank-lines": true
   },
   "rulesDirectory": ["tslint-plugin-prettier"],

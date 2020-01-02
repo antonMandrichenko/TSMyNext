@@ -1,23 +1,23 @@
-import { ApolloServer, gql } from "apollo-server-micro";
+import { ApolloServer, gql } from 'apollo-server-micro'
 
 const typeDefs = gql`
   type Query {
     sayHello: String
   }
-`;
+`
 
 const resolvers = {
   Query: {
-    sayHello: () => "Hello up"
-  }
-};
+    sayHello: () => 'Hello up',
+  },
+}
 
-const apolloServer = new ApolloServer({ typeDefs, resolvers });
+const apolloServer = new ApolloServer({ typeDefs, resolvers })
 
 export const config = {
   api: {
-    bodyParser: false
-  }
+    bodyParser: false,
+  },
 }
 
-export default apolloServer.createHandler({path: "/api/graphql"})
+export default apolloServer.createHandler({ path: '/api/graphql' })
