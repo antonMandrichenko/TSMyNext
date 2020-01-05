@@ -9,6 +9,7 @@ const HELLO_QUERY = gql`
     sayHello
   }
 `
+console.log(process.env.POLL)
 
 const Home: NextComponentType = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY)
