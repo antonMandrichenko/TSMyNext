@@ -84,13 +84,6 @@
       "check-type"
     ],
     "indent": [true, "spaces", 2],
-    "trailing-comma": [
-      true,
-      {
-        "multiline": "always",
-        "singleline": "never"
-      }
-    ],
     "linebreak-style": [true, "LF"],
     "typedef": [true, "call-signature", "parameter", "property-declaration"],
     "no-consecutive-blank-lines": true
