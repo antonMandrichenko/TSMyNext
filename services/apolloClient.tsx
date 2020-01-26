@@ -55,11 +55,13 @@ export function withApollo(PageComponent: NextPage): NextPage {
 
   return WithApollo
 }
-
 const initApolloClient = (initState = {}) => {
   const cache = new InMemoryCache().restore(initState)
   const client = new ApolloClient({
-    uri: 'http://localhost:3000/api/graphql',
+    uri:
+      process.env.NODE_ENV === 'development'
+        ? `http://localhost:3000/api/graphql`
+        : `/api/graphql`,
     fetch,
     cache,
   })

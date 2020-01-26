@@ -9,8 +9,6 @@ const HELLO_QUERY = gql`
     sayHello
   }
 `
-console.log(process.env.POLL)
-
 const Home: NextComponentType = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY)
 
@@ -21,7 +19,12 @@ const Home: NextComponentType = () => {
     return <div>{`Error ${error.message}`}</div>
   }
 
-  return <div>{data.sayHello}</div>
+  return (
+    <>
+      <div>Go west</div>
+      <div>{data.sayHello}</div>
+    </>
+  )
 }
 
 export default withApollo(Home)
