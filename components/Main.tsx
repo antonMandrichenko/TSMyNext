@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import Layout from './Layout'
 import { Typography, Grid, Button, withStyles } from '@material-ui/core'
+import EventAvailableIcon from '@material-ui/icons/EventAvailable'
 import MainFoto from './MainPhoto'
 import MainButton from './UI/MainButton'
 
@@ -22,6 +23,19 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     container: {
       padding: '20px 0',
+    },
+    start: {
+      display: 'flex',
+      alignItems: 'center',
+    },
+    button: {
+      margin: '30px 0',
+    },
+    mainTitle: {
+      display: 'flex',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
     },
   })
 )
@@ -56,7 +70,7 @@ export default function Main({}: Props): ReactElement {
     <div className={classes.root}>
       <Layout>
         <header className={classes.header}>
-          <Typography variant="h6">Scroll to Hide App Bar</Typography>
+          <Typography variant="h6">UpworkMe.com</Typography>
           <div>
             {headerMenuItem.map(itemMenu =>
               itemMenu !== 'Оформить заявку' ? (
@@ -74,8 +88,21 @@ export default function Main({}: Props): ReactElement {
           </div>
         </header>
         <Grid container={true} className={classes.container}>
-          <Grid item={true} xs={6}>
-            first
+          <Grid item={true} xs={6} className={classes.mainTitle}>
+            <Typography variant="body1" gutterBottom={true}>
+              Интенсивный онлайн-курс
+            </Typography>
+            <Typography variant="h3" gutterBottom={true}>
+              Front-End Advanced Pro
+            </Typography>
+            <Typography>
+              Прокачай свои навыки до уровня Senior за 2 месяца практики и
+              получай зарплату своей мечты!
+            </Typography>
+            <MainButton text="Записаться" size="large" />
+            <Typography className={classes.start}>
+              <EventAvailableIcon /> Старт курса 20 марта
+            </Typography>
           </Grid>
           <Grid item={true} xs={6}>
             <MainFoto />

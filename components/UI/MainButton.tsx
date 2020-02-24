@@ -14,9 +14,17 @@ const ColorButton = withStyles((theme: Theme) => ({
 }))(Button)
 
 interface Props {
-  text: string
+  text?: string
+  size?: string
 }
 
-export default function MainButton({ text }: Props): ReactElement {
-  return <ColorButton color="secondary">{text}</ColorButton>
+export default function MainButton({ text, size }: Props): ReactElement {
+  return (
+    <ColorButton
+      color="secondary"
+      style={{ padding: size && '12px 60px', margin: size && '30px 0' }}
+    >
+      {text}
+    </ColorButton>
+  )
 }
