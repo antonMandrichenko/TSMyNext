@@ -29,8 +29,8 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M326.563 255.396H270.166C270.166 255.396 257.203 254.46 260.277 273.315C263.618 294.041 265.489 316.105 265.489 316.105"
         stroke="#EDEDED"
-        stroke-width="9.4063"
-        stroke-miterlimit="10"
+        strokeWidth="9.4063"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
@@ -88,29 +88,29 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M219.917 432.575C219.784 433.912 219.917 435.383 220.585 436.587"
         stroke="white"
-        stroke-width="1.0452"
-        stroke-miterlimit="10"
+        strokeWidth="1.0452"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M216.443 433.377C216.309 434.982 216.576 436.587 217.111 438.058"
         stroke="white"
-        stroke-width="1.0452"
-        stroke-miterlimit="10"
+        strokeWidth="1.0452"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M213.102 434.715C213.102 436.052 213.235 437.389 213.502 438.726"
         stroke="white"
-        stroke-width="1.0452"
-        stroke-miterlimit="10"
+        strokeWidth="1.0452"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M230.341 443.941C231.744 443.941 232.881 442.804 232.881 441.401C232.881 439.997 231.744 438.86 230.341 438.86C228.939 438.86 227.802 439.997 227.802 441.401C227.802 442.804 228.939 443.941 230.341 443.941Z"
         stroke="white"
-        stroke-width="1.0452"
-        stroke-miterlimit="10"
+        strokeWidth="1.0452"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
@@ -132,29 +132,29 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M241.701 439.796C241.567 441.267 241.701 442.738 242.369 444.075"
         stroke="white"
-        stroke-width="1.0863"
-        stroke-miterlimit="10"
+        strokeWidth="1.0863"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M238.226 440.598C238.093 442.337 238.36 443.941 239.028 445.546"
         stroke="white"
-        stroke-width="1.0863"
-        stroke-miterlimit="10"
+        strokeWidth="1.0863"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M234.618 441.936C234.618 443.273 234.751 444.744 235.019 446.081"
         stroke="white"
-        stroke-width="1.0863"
-        stroke-miterlimit="10"
+        strokeWidth="1.0863"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M249.986 448.889C249.986 447.418 251.189 446.215 252.659 446.215C254.129 446.215 255.332 447.418 255.332 448.889C255.332 450.36 254.129 451.563 252.659 451.563C251.189 451.563 249.986 450.36 249.986 448.889Z"
         stroke="white"
-        stroke-width="1.0863"
-        stroke-miterlimit="10"
+        strokeWidth="1.0863"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
@@ -176,8 +176,8 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M396.991 263.018H340.595C340.595 263.018 327.632 262.082 330.705 280.937C334.046 301.663 335.917 323.727 335.917 323.727"
         stroke="#EDEDED"
-        stroke-width="9.4063"
-        stroke-miterlimit="10"
+        strokeWidth="9.4063"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
@@ -227,7 +227,7 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M346.074 81.6938H331.106V91.7228H346.074V81.6938Z"
         stroke="#292640"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -247,7 +247,7 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M326.83 81.6938H311.862V91.7228H326.83V81.6938Z"
         stroke="#292640"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -263,7 +263,7 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M326.963 86.2403C326.963 86.2403 328.567 84.2345 331.106 86.3741"
         stroke="#292640"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -288,7 +288,7 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M346.208 83.0311L364.249 78.4846"
         stroke="#292640"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <g opacity="0.1">
@@ -334,8 +334,8 @@ export default function MainPhoto(): ReactElement {
         d="M70.9245 211.208L218.33 211.208V128.836H70.9245V211.208Z"
         fill="white"
         stroke="white"
-        stroke-width="3.1354"
-        stroke-miterlimit="10"
+        strokeWidth="3.1354"
+        strokeMiterlimit="10"
       />
       <path
         d="M103.383 192.414H80.2627V194.554H103.383V192.414Z"
@@ -364,8 +364,8 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M109.53 204.449C108.995 208.193 108.594 211.937 109.263 215.547C109.931 219.158 112.203 222.768 115.544 224.239C117.415 225.042 119.419 225.175 121.29 225.309C127.17 225.577 133.051 225.71 138.931 225.71"
         stroke="#EDEDED"
-        stroke-width="2"
-        stroke-miterlimit="10"
+        strokeWidth="2"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
@@ -486,15 +486,15 @@ export default function MainPhoto(): ReactElement {
       <path
         d="M87.3459 107.368C82.9358 103.356 82.6685 96.6705 82.6685 90.6531C82.6685 83.5659 82.8021 76.6125 82.8021 69.5253C82.8021 64.3102 82.6685 58.5603 79.1938 54.5487C82.6685 50.5371 82.8021 44.7871 82.8021 39.572C82.8021 32.4848 82.6685 25.5314 82.6685 18.4443C82.6685 12.4268 82.9358 5.74085 87.3459 1.72925"
         stroke="#7ACCE8"
-        stroke-width="1.6096"
-        stroke-miterlimit="10"
+        strokeWidth="1.6096"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
       <path
         d="M266.691 107.368C271.102 103.356 271.369 96.6705 271.369 90.6531C271.369 83.5659 271.235 76.6125 271.235 69.5253C271.235 64.3102 271.369 58.5603 274.843 54.5487C271.369 50.5371 271.235 44.7871 271.235 39.572C271.235 32.4848 271.369 25.5314 271.369 18.4443C271.369 12.4268 271.102 5.74085 266.691 1.72925"
         stroke="#7ACCE8"
-        stroke-width="1.6096"
-        stroke-miterlimit="10"
+        strokeWidth="1.6096"
+        strokeMiterlimit="10"
         strokeLinecap="round"
       />
     </svg>
