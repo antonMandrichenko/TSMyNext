@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.primary.contrastText,
+      height: 780,
     },
     header: {
       padding: '20px 0',
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     container: {
       padding: '20px 0',
+      height: 700,
     },
     start: {
       display: 'flex',
@@ -37,6 +39,11 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: 'column',
       alignItems: 'flex-start',
     },
+    mainPhoto: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+    }
   })
 )
 
@@ -104,7 +111,7 @@ export default function Main({}: Props): ReactElement {
               <EventAvailableIcon /> Старт курса 20 марта
             </Typography>
           </Grid>
-          <Grid item={true} xs={6}>
+          <Grid item={true} xs={6} className={classes.mainPhoto}>
             <MainFoto />
           </Grid>
         </Grid>
