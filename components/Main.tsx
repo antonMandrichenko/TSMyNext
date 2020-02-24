@@ -2,8 +2,8 @@ import React, { ReactElement } from 'react'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import Layout from './Layout'
 import { Typography, Grid, Button, withStyles } from '@material-ui/core'
-import { green } from '@material-ui/core/colors'
 import MainFoto from './MainPhoto'
+import MainButton from './UI/MainButton'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme: Theme) =>
     itemMenu: {
       margin: '0 10px',
     },
+    container: {
+      padding: '20px 0',
+    },
   })
 )
 
@@ -27,17 +30,6 @@ const ColorButton = withStyles((theme: Theme) => ({
   root: {
     textTransform: 'none',
     color: theme.palette.primary.contrastText,
-  },
-}))(Button)
-
-const MainButton = withStyles((theme: Theme) => ({
-  root: {
-    textTransform: 'none',
-    color: theme.palette.primary.contrastText,
-    backgroundColor: green[500],
-    '&:hover': {
-      backgroundColor: green[700],
-    },
   },
 }))(Button)
 
@@ -76,14 +68,12 @@ export default function Main({}: Props): ReactElement {
                   {itemMenu}
                 </ColorButton>
               ) : (
-                <MainButton key={itemMenu} color="secondary">
-                  {itemMenu}
-                </MainButton>
+                <MainButton key={itemMenu} text={itemMenu} />
               )
             )}
           </div>
         </header>
-        <Grid container={true}>
+        <Grid container={true} className={classes.container}>
           <Grid item={true} xs={6}>
             first
           </Grid>
