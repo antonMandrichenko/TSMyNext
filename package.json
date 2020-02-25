@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "lint:ts": "tslint 'src/**/*.{ts,tsx,js}'"
+    "lint:ts": "tslint 'src/**/*.{ts,tsx,js}'",
+    "build": "next build && next export",
+    "start": "serve ./out"
   },
   "author": "",
   "license": "ISC",
