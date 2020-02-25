@@ -61,7 +61,7 @@ const initApolloClient = (initState = {}) => {
     uri:
       process.env.NODE_ENV === 'development'
         ? `http://localhost:3000/api/graphql`
-        : `/api/graphql`,
+        : `https://sad-kowalevski-2f6dda.netlify.com/api/graphql`,
     fetch,
     cache,
   })
