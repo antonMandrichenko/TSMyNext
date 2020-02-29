@@ -1,7 +1,9 @@
 import React, { ReactElement } from 'react'
-import CountUp from 'react-countup'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
+import { Grid } from '@material-ui/core'
 import Layout from './Layout'
+import Figure from './Figure'
+import { FiguresTypes } from '../interfaces'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -43,13 +45,24 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
+const figures: FiguresTypes[] = [
+  { title: 'Лекции', number: 20, text: 'часов' },
+  { title: 'Практика', number: 120, text: 'часов' },
+  { title: 'Группы до', number: 10, text: 'человек' },
+  { title: 'Поддержка ментора', number: '∞', text: 'неограниченно' },
+]
+
 export default function Figures(): ReactElement {
   const classes = useStyles()
 
   return (
     <div className={classes.root}>
       <Layout>
-        <CountUp end={340} />
+        <Grid container={true}>
+          {figures.map(figure => (
+            <Figure key={figure.title} figure={figure} />
+          ))}
+        </Grid>
       </Layout>
     </div>
   )
