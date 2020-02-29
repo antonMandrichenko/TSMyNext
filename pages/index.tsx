@@ -13,7 +13,7 @@ const HELLO_QUERY = gql`
   }
 `
 const Home: NextComponentType = () => {
-  const { data, loading, error } = useQuery(HELLO_QUERY)
+  const { loading, error } = useQuery(HELLO_QUERY)
 
   if (loading) {
     return <div>Loading...</div>
