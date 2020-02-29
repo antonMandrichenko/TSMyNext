@@ -28,7 +28,7 @@ const Home: NextComponentType = () => {
       <Main />
       <Button variant="contained">Default</Button>
       <div>Go west</div>
-      <div>{data.sayHello}</div>
+      {/* <div>{data.sayHello}</div> */}
       {/* </MuiThemeProvider> */}
     </>
   )
