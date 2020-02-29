@@ -6,6 +6,7 @@ import { NextComponentType } from 'next'
 // import { theme } from '../utils/theme'
 import Button from '@material-ui/core/Button'
 import Main from '../components/Main'
+import Figures from '../components/Figures'
 
 // const HELLO_QUERY = gql`
 //   query HelloQuery {
@@ -26,6 +27,7 @@ const Home: NextComponentType = () => {
     <>
       {/* <MuiThemeProvider theme={theme}> */}
       <Main />
+      <Figures />
       <Button variant="contained">Default</Button>
       {/* <div>Go west</div> */}
       {/* <div>{data.sayHello}</div> */}
