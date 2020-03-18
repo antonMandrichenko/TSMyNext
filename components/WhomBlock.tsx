@@ -3,12 +3,14 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import Layout from './Layout'
 import { Typography, Grid, Paper } from '@material-ui/core'
 
+const heightSize = 600
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.primary.contrastText,
-      height: 600,
+      height: heightSize,
     },
     title: {
       fontSize: '3rem',
@@ -23,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: '1.5rem',
       fontSize: '1.4rem',
       marginTop: '2rem',
+      margin: '0 auto',
     },
     paper: {
       backgroundColor: '#A0BDCB',
@@ -44,6 +47,15 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'center',
       marginBottom: '3rem',
     },
+    grid: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: heightSize,
+    },
+    typo: {
+      textAlign: 'center',
+    },
   })
 )
 
@@ -56,19 +68,25 @@ export default function WhomBlock({}: Props): ReactElement {
     <div className={classes.root}>
       <Layout>
         <Grid container={true} direction="row" justify="center">
-          <Grid item={true} xs={4}>
-            <Typography className={classes.title}>Начни</Typography>
-            <Typography className={classes.title}>зарабатывать</Typography>
-            <Typography className={classes.title}>больше спустя</Typography>
-            <Typography className={classes.title}>всего 2 месяца</Typography>
+          <Grid item={true} xs={4} className={classes.grid}>
+            <div>
+              <Typography className={classes.title}>Начни</Typography>
+              <Typography className={classes.title}>зарабатывать</Typography>
+              <Typography className={classes.title}>больше спустя</Typography>
+              <Typography className={classes.title}>всего 2 месяца</Typography>
+            </div>
           </Grid>
-          <Grid item={true} xs={4}>
-            <Typography>Для кого этот курс</Typography>
-            <div className={classes.textFront}>
-              Front-end разработчики, с коммерческим опытом, котрые хотят
-              повысить знания, освоить новые на более сложных задачах и повысить
-              свой статус как специалиста, зп либо перейти на новую работу с
-              более высокой зп
+          <Grid item={true} xs={4} className={classes.grid}>
+            <div>
+              <Typography className={classes.typo}>
+                Для кого этот курс
+              </Typography>
+              <div className={classes.textFront}>
+                Front-end разработчики, с коммерческим опытом, котрые хотят
+                повысить знания, освоить новые на более сложных задачах и
+                повысить свой статус как специалиста, зп либо перейти на новую
+                работу с более высокой зп
+              </div>
             </div>
           </Grid>
           <Grid item={true} xs={4} className={classes.gridRight}>
