@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react'
 export default function MainPhoto(): ReactElement {
   return (
     <svg
-      width="660"
+      width="80%"
       height="570"
       viewBox="0 0 400 350"
       fill="none"
