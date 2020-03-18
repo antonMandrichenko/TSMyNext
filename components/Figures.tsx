@@ -9,38 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       color: theme.palette.text.primary,
-      // height: 780,
-    },
-    header: {
-      padding: '20px 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignContent: 'center',
-    },
-    itemMenu: {
-      margin: '0 10px',
-    },
-    container: {
-      padding: '20px 0',
-      height: 700,
-    },
-    start: {
-      display: 'flex',
-      alignItems: 'center',
-    },
-    button: {
-      margin: '30px 0',
-    },
-    mainTitle: {
-      display: 'flex',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-    },
-    mainPhoto: {
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
+      height: '20vh',
     },
   })
 )
@@ -56,14 +25,18 @@ export default function Figures(): ReactElement {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
-      <Layout>
-        <Grid container={true}>
-          {figures.map(figure => (
-            <Figure key={figure.title} figure={figure} />
-          ))}
-        </Grid>
-      </Layout>
-    </div>
+    <Layout>
+      <Grid
+        container={true}
+        className={classes.root}
+        direction="row"
+        justify="center"
+        alignItems="center"
+      >
+        {figures.map(figure => (
+          <Figure key={figure.title} figure={figure} />
+        ))}
+      </Grid>
+    </Layout>
   )
 }

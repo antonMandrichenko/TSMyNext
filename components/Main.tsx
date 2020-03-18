@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.primary.contrastText,
-      height: 780,
+      height: '80vh',
     },
     header: {
       padding: '20px 0',
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     container: {
       padding: '20px 0',
-      height: 700,
+      height: '100%',
     },
     start: {
       display: 'flex',
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       justifyContent: 'flex-end',
       alignItems: 'center',
-    }
+    },
   })
 )
 
