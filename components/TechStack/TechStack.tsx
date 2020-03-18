@@ -15,7 +15,11 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'center',
       fontSize: '2rem',
       fontWeight: 'bold',
-      margin: '3rem 0',
+      marginBottom: '3rem',
+    },
+    main: {
+      backgroundColor: '#F5FAFD',
+      padding: '4rem 0',
     },
   })
 )
@@ -56,25 +60,27 @@ export default function TechStack(): ReactElement {
   }
 
   return (
-    <Layout>
-      <Typography className={classes.typo}>Будем использовать</Typography>
-      <Grid
-        container={true}
-        className={classes.root}
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
-        <React.Fragment>
-          {imagesSrc.map(image => (
-            <TechStackElem
-              key={image.title}
-              src={imageSelect(image.title)}
-              title={image.title}
-            />
-          ))}
-        </React.Fragment>
-      </Grid>
-    </Layout>
+    <div className={classes.main}>
+      <Layout>
+        <Typography className={classes.typo}>Будем использовать</Typography>
+        <Grid
+          container={true}
+          className={classes.root}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
+          <React.Fragment>
+            {imagesSrc.map(image => (
+              <TechStackElem
+                key={image.title}
+                src={imageSelect(image.title)}
+                title={image.title}
+              />
+            ))}
+          </React.Fragment>
+        </Grid>
+      </Layout>
+    </div>
   )
 }
