@@ -31,34 +31,21 @@ const useStyles = makeStyles((theme: Theme) =>
       left: 125,
       height: 610,
       width: 280,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     gridRight: {
       position: 'relative',
       height: '100%',
     },
+    gridRightTitle: {
+      textAlign: 'center',
+      marginBottom: '3rem',
+    },
   })
 )
-
-// const ColorButton = withStyles((theme: Theme) => ({
-//   root: {
-//     textTransform: 'none',
-//     color: theme.palette.primary.contrastText,
-//   },
-// }))(Button)
-
-// const headerMenuItem = [
-//   'О курсе',
-//   'Программа',
-//   'Цена',
-//   'Контакты',
-//   'Оформить заявку',
-// ]
-
-// const handleChangeMenu = (
-//   e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-// ) => {
-//   console.dir(e.target)
-// }
 
 interface Props {}
 
@@ -86,7 +73,27 @@ export default function WhomBlock({}: Props): ReactElement {
           </Grid>
           <Grid item={true} xs={4} className={classes.gridRight}>
             <Paper variant="outlined" className={classes.paper}>
-              Lesss
+              <Typography className={classes.gridRightTitle}>
+                Базовые требования
+              </Typography>
+              {}
+              <Typography variant="h6" gutterBottom={true}>
+                Опыт работы
+              </Typography>
+              <img
+                src={require('../assets/programmer_icon.png')}
+                alt="programmer"
+              />
+              <Typography className={classes.gridRightTitle}>
+                от 1 года
+              </Typography>
+              <Typography variant="h6" gutterBottom={true}>
+                Знание английского
+              </Typography>
+              <img src={require('../assets/uk-flag_icon.png')} alt="flag" />
+              <Typography className={classes.gridRightTitle}>
+                intermediate
+              </Typography>
             </Paper>
           </Grid>
         </Grid>
