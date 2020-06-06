@@ -22,7 +22,7 @@
     "@types/webpack": "^4.41.1",
     "apollo-boost": "^0.4.7",
     "apollo-cache-inmemory": "^1.6.5",
-    "apollo-server-micro": "^2.9.15",
+    "apollo-server-micro": "^2.14.2",
     "dotenv": "^8.2.0",
     "es6-promise": "^4.2.8",
     "graphql-tag": "^2.10.1",
